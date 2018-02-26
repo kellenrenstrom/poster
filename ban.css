@@ -1,0 +1,628 @@
+/* fonts */
+
+
+@font-face {
+	font-family: footlight;
+	src:url(../fonts/footlight.TTF);
+}
+
+@import url("https://use.typekit.net/nhx3zfk.css");
+
+
+/* containers */
+
+
+html,body {
+	width: 100%;
+	height: 100%;
+	background: black;
+}
+
+#bg {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: black;
+}
+
+#main {
+	position: absolute;
+	display: inline-block;
+	top: 100%;
+	left: 0px;
+	height: 4650px;
+	width: 100%;
+	z-index: 1;
+	background: #e5e5e5;
+	padding: 50px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;
+}
+
+
+/* text */
+
+
+.large {
+	font-family: footlight;
+	font-size: 530px;
+	position: absolute;
+	color: white;
+}
+
+.medium {
+	font-family: footlight;
+	font-size: 325px;
+	position: absolute;
+	white-space: nowrap;
+	color: white;
+}
+
+.small {
+	font-family: nimbus-sans, sans-serif;
+	font-size: 50px;
+	font-weight: 400;
+	position: absolute;
+}
+
+
+/* shapes */
+
+
+.glow {
+	width: 800px;
+	height: 800px;
+	background: radial-gradient(rgba(255,0,0,1), rgba(255,0,0,1), rgba(255,0,0,0), rgba(255,0,0,0));
+	position: absolute;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+}
+
+.blood {
+	width: 200px;
+	height: 200px;
+	background: transparent;
+	border: 4px red solid;
+	position: absolute;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
+#coverblood {
+	animation: coverbloodmove 10s infinite linear, coverbloodrot 3s infinite linear, coverbloodsquish 1s infinite alternate ease;
+}
+
+#bblood {
+	position: absolute;
+	animation: bbloodmove 10s infinite linear, bbloodrot 3s infinite linear, bbloodsquish 1s infinite alternate ease;
+}
+
+
+/* cover */
+
+
+#ban1 {
+	top: -25px;
+}	
+
+#the {
+	top: 327px;
+	left: 49%;
+	-webkit-transform: translate(-50%, 0%);
+}
+
+#ban2 {
+	float: right;
+	top: 600px;
+	right: 20px;
+	transform: rotate(180deg)
+}
+
+#covergglow {
+	width: 800px;
+	height: 800px;
+	background: radial-gradient(rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,0), rgba(0,0,0,0));
+	position: absolute;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	top: 520px;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	opacity: .8;
+}
+
+#coversmall {
+	top: 507px;
+	left: 50%;
+	margin-right: 500px;
+	color: red;
+	-webkit-transform: translate(-50%, -50%); /* HORIZONTAL CENTER */
+	white-space: nowrap;
+}
+
+#coverrglow {
+	top: 520px;
+	animation: pulse 2s infinite alternate;
+}
+
+
+/* seg 1 */
+
+
+.rect {
+	width: 150%;
+	height: 200px;
+	background: red;
+	position: absolute;
+	left: 50%;
+}
+
+.rect:hover {
+	opacity: 0;
+}
+
+#rect1 {
+	-webkit-transform: rotate(6deg) translate(-50%, 0%);
+	top: 310px;
+}
+
+#rect2 {
+	-webkit-transform: rotate(-15deg) translate(-50%, 0%);
+	top: 100px;
+}
+
+#rect3 {
+	-webkit-transform: rotate(-4deg) translate(-50%, 0%);
+	top: 700px;
+}
+
+#samesex {
+	left: 50%;
+	top: 130px;
+	-webkit-transform: translate(-53%, 0%);
+}
+
+#small2 {
+	top: 400px;
+	left: 50%;
+	-webkit-transform: translate(-53%, 0);
+}
+
+#banned {
+	left: 50%;
+	top: 480px;
+	-webkit-transform: translate(-53%, 0%);
+}
+
+#small3 {
+	top: 750px;
+	right: 50px;
+	float: right;
+}
+
+#hiv {
+	left: 50%;
+	top: 830px;
+	-webkit-transform: translate(-53%, 0%);
+}
+
+
+/* seg2 */
+
+
+#disc {
+	text-align: center;
+	float: left;
+	left: 50%;
+	top: 1300px;
+	-webkit-transform: translate(-50%, 0%);
+	line-height: 350px;
+	animation: disc 12s infinite steps(1,end);
+	color: black;
+}
+
+#anti {
+	text-align: center;
+	float: left;
+	left: 50%;
+	top: 1300px;
+	-webkit-transform: translate(-50%, 0%);
+	line-height: 350px;
+	animation: anti 12s infinite steps(1,end);
+	color: black;
+}
+
+#stig {
+	text-align: center;
+	float: left;
+	left: 50%;
+	top: 1300px;
+	-webkit-transform: translate(-50%, 0%);
+	line-height: 350px;
+	animation: stig 12s infinite steps(1,end);
+	color: black;
+}
+
+#maingglow {
+	width: 800px;
+	height: 800px;
+	background: radial-gradient(rgba(229,229,229,1), rgba(229,229,229,1), rgba(229,229,229,0), rgba(229,229,229,0));
+	position: absolute;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	top: 1780px;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	opacity: .8;
+}
+
+#mainrglow {
+	top: 1780px;
+	animation: mainpulse 2s infinite alternate;
+}
+
+#small4 {
+	top: 1780px;
+	left: 50%;
+	margin-right: 500px;
+	color: red;
+	-webkit-transform: translate(-50%, -50%); /* HORIZONTAL CENTER */
+	white-space: nowrap;
+}
+
+
+/* seg3 */
+
+
+#ten {
+	top: 2550px;
+	left: 10px;
+}
+
+#fourteen {
+	top: 2550px;
+	float: right;
+	right: 50px;
+}
+
+#dash {
+	height: 10px;
+	width: 200px;
+	top: 2660px;
+	left: 450px;
+	position: absolute;
+	background: white;
+	animation: grow 4s infinite ease;
+}
+
+#small5 {
+	top: 2475px;
+	left: 450px;
+}
+
+#small6 {
+	top: 2725px;
+	right: 450px;
+	float: right;
+	text-align: right;
+}
+
+#pints {
+	top: 3050px;
+	left: 50%;
+	-webkit-transform: translate(-50%, 0%);
+	animation: fade 4s infinite ease alternate;
+	text-justify: distribute;
+}
+
+#small7 {
+	top: 2975px;
+	left: 450px;
+}
+
+#small8 {
+	top: 3250px;
+	right: 450px;
+	text-align: right;
+}
+
+
+
+/* bottom */
+
+
+#black {
+	width: 100%;
+	height: 1175px;
+	left: 50%;
+	background: black;
+	position: absolute;
+	bottom: -10px;
+	-webkit-transform: translate(-50%, 0%);
+}
+
+#blood1 {
+	top: 3575px;
+	left: 20px;
+}	
+
+#is {
+	top: 3920px;
+	left: 50%;
+	-webkit-transform: translate(-50%, 0%);
+}
+
+#blood2 {
+	float: right;
+	top: 4175px;
+	right: 20px;
+	transform: rotate(180deg)
+}
+
+#bgglow {
+	width: 800px;
+	height: 800px;
+	background: radial-gradient(rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,0), rgba(0,0,0,0));
+	position: absolute;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	top: 4110px;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	opacity: .8;
+}
+
+#bsmall {
+	top: 4110px;
+	left: 50%;
+	margin-right: 500px;
+	color: red;
+	-webkit-transform: translate(-50%, -50%); /* HORIZONTAL CENTER */
+	white-space: nowrap;
+}
+
+#brglow {
+	top: 4110px;
+	animation: pulse 2s infinite alternate;
+}
+
+
+/* animations */
+
+
+@keyframes pulse {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes coverbloodmove {
+	0% {
+		top: 9%;
+		left: 2%;
+	}
+	33% {
+		top: 9%;
+		left: 84%;
+	}
+	50% {
+		top: 75%;
+		left: 84%;
+	}
+	83% {
+		top: 75%;
+		left: 2%;
+	}
+	100% {
+		top: 9%;
+		left: 2%;
+	}
+}
+
+@keyframes coverbloodrot {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes coverbloodsquish {
+	0% {
+		height: 250px
+		width: 125px;
+	}
+	100% {
+		height: 125px;
+		width: 250px;
+	}
+}
+
+@keyframes disc {
+	0% {
+		opacity: 1;
+	}
+	17% {
+		opacity: 1;
+	}
+	33% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0;
+	}
+	66% {
+		opacity: 0;
+	}
+	84% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes anti {
+	0% {
+		opacity: 0;
+	}
+	17% {
+		opacity: 0;
+	}
+	33% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	66% {
+		opacity: 0;
+	}
+	84% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes stig {
+	0% {
+		opacity: 0;
+	}
+	17% {
+		opacity: 0;
+	}
+	33% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0;
+	}
+	66% {
+		opacity: 1;
+	}
+	84% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes mainpulse {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes grow {
+	0% {
+		width: 0px;
+	}
+	50% {
+		left: 450px;
+		width: 1000px;
+		background: white;
+	}
+	100% {
+		width: 0px;
+		left: 1451px;
+		background: red;
+	}
+}
+
+@keyframes fade {
+	0% {
+		color: white;
+	}
+	100% {
+		color: transparent;
+		text-shadow: 0 0 40px rgba(255,0,0,1);
+	}
+}
+
+@keyframes bbloodmove {
+	0% {
+		top: 3700px;
+		left: 2%;
+	}
+	33% {
+		top: 3700px;
+		left: 84%;
+	}
+	50% {
+		top: 4375px;
+		left: 84%;
+	}
+	83% {
+		top: 4375px;
+		left: 2%;
+	}
+	100% {
+		top: 3700px;
+		left: 2%;
+	}
+}
+
+@keyframes bbloodrot {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes bbloodsquish {
+	0% {
+		height: 250px
+		width: 125px;
+	}
+	100% {
+		height: 125px;
+		width: 250px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
