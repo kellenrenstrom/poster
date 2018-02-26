@@ -3,7 +3,7 @@
 
 @font-face {
 	font-family: footlight;
-	src:url(../fonts/footlight.ttf);
+	src:url(../fonts/footlight.TTF);
 }
 
 @import url("https://use.typekit.net/nhx3zfk.css");
